@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SunWin Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Chào mừng đến SunWin</h1>
+
+  <h2>Đăng ký</h2>
+  <form id="register">
+    <input type="text" name="username" placeholder="Tên đăng nhập">
+    <input type="password" name="password" placeholder="Mật khẩu">
+    <button type="submit">Đăng ký</button>
+  </form>
+
+  <h2>Đăng nhập</h2>
+  <form id="login">
+    <input type="text" name="username" placeholder="Tên đăng nhập">
+    <input type="password" name="password" placeholder="Mật khẩu">
+    <button type="submit">Đăng nhập</button>
+  </form>
+
+  <div id="user-info" style="display:none;">
+    <p>Số dư: <span id="balance">0</span></p>
+    <button onclick="deposit()">Nạp 100</button>
+    <button onclick="withdraw()">Rút 50</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
